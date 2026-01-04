@@ -13,7 +13,7 @@ CHIP DMux {
 
     PARTS:
     //// Answer
-    Not(in = sel, out = notSel);
-    And(a = in, b = notSel, out = a);
+    Not(in = sel, out = nSel);
+    And(a = in, b = nSel, out = a);
     And(a = in, b = sel, out = b);
 }
