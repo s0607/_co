@@ -11,6 +11,21 @@ CHIP Inc16 {
     OUT out[16];
 
     PARTS:
-    //// Answer
-    Add16(a=in, b[0]=true, out=out);
+HalfAdder(a=in[0], b=true, sum=out[0], carry=aa);
+    FullAdder(a=in[1], b=false, c=aa, sum=out[1], carry=bb);
+    FullAdder(a=in[2], b=false, c=bb, sum=out[2], carry=cc);
+    FullAdder(a=in[3], b=false, c=cc, sum=out[3], carry=dd);
+    FullAdder(a=in[4], b=false, c=dd, sum=out[4], carry=ee);
+    FullAdder(a=in[5], b=false, c=ee, sum=out[5], carry=ff);
+    FullAdder(a=in[6], b=false, c=ff, sum=out[6], carry=gg);
+    FullAdder(a=in[7], b=false, c=gg, sum=out[7], carry=hh);
+    FullAdder(a=in[8], b=false, c=hh, sum=out[8], carry=ii);
+    FullAdder(a=in[9], b=false, c=ii, sum=out[9], carry=jj);
+    FullAdder(a=in[10], b=false, c=jj, sum=out[10], carry=kk);
+    FullAdder(a=in[11], b=false, c=kk, sum=out[11], carry=ll);
+    FullAdder(a=in[12], b=false, c=ll, sum=out[12], carry=mm);
+    FullAdder(a=in[13], b=false, c=mm, sum=out[13], carry=nn);
+    FullAdder(a=in[14], b=false, c=nn, sum=out[14], carry=oo);
+    FullAdder(a=in[15], b=false, c=oo, sum=out[15], carry=ignore);
+}
 }
