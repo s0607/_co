@@ -15,9 +15,9 @@ CHIP PC {
     
     PARTS:
     
-    Register(in=outM, load=true, out=out, out=outR);
-    Inc16(in=outR, out=outRI);
-    Mux8Way16(a=outR, b=outRI, c=in, d=in,
+    Register(in=om, load=true, out=out, out=oR);
+    Inc16(in=oR, out=outRI);
+    Mux8Way16(a=oR, b=outRI, c=in, d=in,
               e=false, f=false, g=false, h=false,
-              sel[2]=reset, sel[1]=load, sel[0]=inc, out=outM);
+              sel[2]=reset, sel[1]=load, sel[0]=inc, out=om);
 }
