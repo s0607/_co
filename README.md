@@ -17,3 +17,4 @@ https://chatgpt.com/share/695a97ee-e6b8-8004-bf24-c5a358d53e8c
 /Computer
 
 https://chatgpt.com/share/695a9959-3230-8004-b981-f4f022e6e732
+作業部分有參考過同學的作業架構與實作方向，但所有程式碼皆是有在自我理解嘗試寫出
